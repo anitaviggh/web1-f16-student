@@ -1,0 +1,18 @@
+/* WITHOUT BORDERS */
+
+section {
+    padding:1em 5%;
+}
+
+section, h1, h2, h3 {
+    border:none!important;
+}
+
+a h3 {
+    margin:.5em 1.5em;
+}
+
+h1, h2 {
+    text-align:left!important;
+    padding-bottom:.2em
+}
