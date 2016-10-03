@@ -1,0 +1,84 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina|PT+Serif:400,400i,700,700i';
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    color:#fff;
+    font-family:"PT Serif", Georgia, sans-serif;
+}
+
+section {
+}
+
+section:nth-of-type(2n) {
+    background:#44A04D;
+}
+
+section:nth-of-type(2n-1) {
+    background:#377F3D;
+}
+
+section > div {
+    position:relative;
+    max-width:40em;
+    margin:0 auto;
+        padding:2em 0.5em;
+    font-size:18px
+}
+
+section:first-of-type a {
+    background:#44A04D;
+    padding:1em;
+    opacity:1;
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:14px
+}
+
+section:first-of-type a:hover {
+    background:#fff;
+    color:#44A04D;
+}
+
+
+h1 {
+    text-align:center;
+    font-size:4em;
+    margin-top:0.em
+}
+
+h2 {
+    margin-bottom:0.5em;
+}
+
+
+p, ul {
+    line-height:1.4em;
+}
+
+ul {
+    margin-left:1.5em;
+}
+
+
+section img {
+    float:right;
+    width:200px;
+    margin-left:2em;
+    margin-bottom:2em;
+}
+
+a {
+    color:inherit;
+    opacity:0.6;
+    text-decoration:none;
+}
+
+a:hover {
+    opacity:1;
+}

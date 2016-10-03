@@ -14,6 +14,40 @@ body {
     font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height:1.4em;
     font-size:18px;
+    background:#d36272;
+}
+
+body:after {
+    content:"";
+    width:calc(50% - 20em);
+    min-width:100px;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:calc(50% + 20em);
+    background-color:#fff;
+    background-image:url(images/halftonetexture.png);
+    background-repeat:repeat-y;
+    background-position:right;
+    background-size:50%;
+}
+
+body:before {
+    content:"";
+    width:calc(50% - 20em);
+    min-width:100px;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:calc(50% + 20em);
+    background-image:url(images/halftonetexturewhite.png);
+    background-repeat:repeat-y;
+    background-position:left;
+    background-size:50%;
+}
+
+section {
+    background:#fff;
 }
 
 h1, h2, h3 {
@@ -28,13 +62,15 @@ h1, h2 {
     padding: 1.4em 5% .5em;
     text-align:right;
     text-transform:uppercase;
-    color:#B94959;
+    /*color:#B94959;*/
+    color:#fff;
 }
 
 h1 {
     font-weight:700;
-    font-size:3em;
+    font-size:4em;
     text-align:right;
+    padding-top:0.5em;
 }
 
 h2 {
@@ -49,6 +85,31 @@ h3 {
     font-weight:normal;
 }
 
+nav {
+    border-right:4px solid #B94959;
+    text-align:right;
+    margin-top:1em
+}
+
+nav ul, footer ul {
+    list-style-type:none;
+    margin-right:2em
+}
+
+nav li, footer li {
+    display:inline-block;
+    margin:0 5px;
+}
+
+nav li a, footer li a {
+    color:#fff;
+    opacity:0.6;
+}
+
+nav li a:hover, footer li a:hover {
+    opacity:1;
+}
+
 section h3:first-child {
     margin-top:0;
 }
@@ -57,6 +118,45 @@ section {
     border-left:4px solid #B94959;
     border-bottom:4px solid #B94959;
     padding: 2em 5%;
+}
+
+
+.banddesc {
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 1s ease-in-out;
+    margin-bottom:0;
+    margin-bottom:1em;
+}
+
+.band:hover .banddesc {
+    max-height:400px;
+}
+
+
+.bandhead {
+    position:relative;
+    width:100%;
+    height:160px;
+    margin-bottom:0.5em;
+}
+
+.bandhead img {
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.bandhead h3 {
+    position:absolute;
+    margin:0;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:2em;
+    text-align:center;
+    color:#fff;
 }
 
 a {
@@ -128,5 +228,18 @@ td:hover {
     color:#fff;
 }
 
+
+footer {
+    border-right:4px solid #B94959;
+    text-align:right;
+    padding:1em 0;
+    font-size:12px;
+}
+
+
+footer p {
+    padding: 0 2.2em 0;
+    color:#fff;
+}
 
 
