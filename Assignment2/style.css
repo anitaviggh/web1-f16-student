@@ -71,6 +71,7 @@ h1 {
     font-size:4em;
     text-align:right;
     padding-top:0.5em;
+    margin:0;
 }
 
 h2 {
@@ -88,7 +89,8 @@ h3 {
 nav {
     border-right:4px solid #B94959;
     text-align:right;
-    margin-top:1em
+    padding-top:1em;
+    margin:0;
 }
 
 nav ul, footer ul {
@@ -240,6 +242,20 @@ footer {
 footer p {
     padding: 0 2.2em 0;
     color:#fff;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 
