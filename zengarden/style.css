@@ -16,21 +16,19 @@ body {
 
 .page-wrapper {
     width:90%;
-    margin:1em auto;
-    border-left:1px solid #c29eb9;
-    
+    margin:1em auto;    
 }
 
 header h2 {
     margin-top:1em;
     margin-left:1em;
     color:#c29eb9;
-    margin-bottom:1em
+    margin-bottom:1em;
 }
 
 header h1 {
     font-size:4em;
-    width:200%;
+    width:100%;
     margin-top:1em;
     color:#956a8a;
 }
@@ -118,16 +116,10 @@ footer a {
     }
 
     header h1 {
-        font-size:4em;
-        width:200%;
-        margin-top:1em;
-        color:#956a8a;
+        width:120%;
     }
 
     header h2 {
-        margin-top:1em;
-        margin-left:1em;
-        color:#c29eb9;
         margin-bottom:0;
     }
 
