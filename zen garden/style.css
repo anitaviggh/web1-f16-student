@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:"Slabo 13px";
+    line-height:1.8em;
+    max-width:70em;
+    margin:0 auto;
+    color:#70626c;
+}
+
+.page-wrapper {
+    width:90%;
+    margin:1em auto;
+    border-left:1px solid #c29eb9;
+    
+}
+
+header h2 {
+    margin-top:1em;
+    margin-left:1em;
+    color:#c29eb9;
+    margin-bottom:1em
+}
+
+header h1 {
+    font-size:4em;
+    width:200%;
+    margin-top:1em;
+    color:#956a8a;
+}
+
+aside {
+    margin-top:3em;
+}
+
+aside h3:first-of-type {
+    margin-top:0.2em;
+}
+
+.summary {
+    margin-bottom:1em;
+}
+
+h3 {
+    margin:1em 0 0.5em;
+    font-size:1.4em;
+    color:#956a8a;
+}
+
+h3 + p, p:first-of-type {
+    text-indent:0;
+}
+
+p {
+    text-indent:2em;
+}
+
+a {
+    color:#c542a5;
+    font-weight:bold;
+    text-decoration:none
+}
+
+ul {
+    list-style-type:none;
+    font-size:0.8em;
+}
+
+li {
+    padding:0.3em;
+    opacity:0.5;
+    transition:1s all;
+}
+
+li:hover {
+    opacity:0.9;
+}
+
+li:nth-of-type(2n-1) {
+    background:#f4eaf2;
+}
+
+footer {
+    margin-top:1.5em;
+    padding-top:1em;
+    font-size:0.8em;
+}
+
+footer a {
+    margin:0 1em;
+}
+
+@media screen and (min-width: 50em) {
+
+    .page-wrapper {
+        width:50%;
+        max-width:60em;
+        margin:1em auto;
+        position:relative;
+        left:20%;
+        border-left:1px solid #c29eb9;
+        padding-left:2em;
+        margin-top:10em;
+    }
+
+    header {
+        position:absolute;
+        left:-20%;
+        height:7em;
+        margin-bottom:1em;
+        top:-11em
+    }
+
+    header h1 {
+        font-size:4em;
+        width:200%;
+        margin-top:1em;
+        color:#956a8a;
+    }
+
+    header h2 {
+        margin-top:1em;
+        margin-left:1em;
+        color:#c29eb9;
+        margin-bottom:0;
+    }
+
+    aside {
+        position:absolute;
+        width:50%;
+        top:0em;
+        left:-60%;
+        text-align:right;
+        margin-top:0em;
+    }
+    
+    footer {
+        border-top:1px solid #c29eb9;
+    }
+    
+}

@@ -184,6 +184,10 @@ a h3:hover {
     color:#fff;
 }
 
+strong {
+    color:#d36272;
+}
+
 p {
     margin-bottom:1em;
     line-height:1.5em;
