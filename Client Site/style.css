@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body {
+    height:100%;
+    font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    height:50%;
+    width:100%;
+    position:relative;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #eaedef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eaedef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#eaedef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaedef',GradientType=0 ); /* IE6-9 */
+}
+
+#logo {
+    position:absolute;
+    width:80%;
+    height:80%;
+    top:10%;
+    left:10%;
+    right:10%;
+    bottom:10%;
+    display:block;
+    background-image:url('images/Logo@3x.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+nav {
+    height:3em;
+    border-bottom:1px solid #eaedef;
+    padding-bottom:1px;
+    text-align:center;
+}
+
+nav a {
+    display:inline-block;
+    line-height:3em;
+    padding: 0 1em;
+    margin:0;
+    color:#bcbcbc;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s all;
+}
+
+nav a:hover {
+    color:#7dcaea;
+    background:#eef3f6;
+}
+
+
+.content {
+    max-width:70em;
+    margin:1em auto 0;
+}
