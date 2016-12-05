@@ -8,41 +8,59 @@
 
   <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
 </head>
 
 <body>
-	<div class="header"></div>
+	<div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <h1>Annie Viggh Design</h1>
+    </div>
+    
+    <nav>
+        <a href="">Work</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </nav>
+    
     <div class="sideways">
         <h1>WORK</h1>
     </div>
     
     <a href=""><figure class="featured">
-        <img src="images/placeholder1.jpg">   
+        <img src="images/endangeredbooklet.jpg">   
         <figcaption>
-            <h1>Test Item</h1>
+            <h1>Save the Blobfish!</h1>
         </figcaption>
     </figure></a>
     
     <a href=""><figure>
-        <img src="images/placeholder2.jpg">   
+        <img src="images/bdwtexture.jpg">   
         <figcaption>
-            <h1>Test Item</h1>
+            <h1>Boston Design Week</h1>
         </figcaption>
     </figure></a>
     
     <a href=""><figure>
-        <img src="images/placeholder1.jpg">   
+        <img src="images/housebig.jpg">   
         <figcaption>
-            <h1>Test Item</h1>
+            <h1>Sustainable Solar</h1>
         </figcaption>
     </figure></a>
     
     <a href=""><figure>
-        <img src="images/placeholder2.jpg">   
+        <img src="images/timetable.jpg">   
         <figcaption>
-            <h1>Test Item</h1>
+            <h1>Amtrak Timetable</h1>
         </figcaption>
     </figure></a>
+    
+    <script>
+    jQuery("figcaption h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
+    </script>
     
 </body>
 </html>

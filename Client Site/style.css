@@ -133,9 +133,9 @@ ul {
 
 
 .shopitem {
-    float:left;
-    width:48%;
-    margin:1%;
+    /*float:left;
+    width:48%;*/
+    margin-bottom:5%;
     text-align:center;
 }
 
@@ -143,6 +143,7 @@ ul {
     width:100%;
     min-height:15em;
     background:#eee;
+    object-fit:cover;
 }
 
 .shopitem h4 {
