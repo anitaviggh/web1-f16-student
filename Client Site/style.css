@@ -71,6 +71,16 @@ nav a:hover {
     margin:1em 0;
 }
 
+h1, h2, h3 {
+    text-align:center;
+    font-weight:100;
+    text-transform:uppercase;
+}
+
+h3 {
+    font-size:1.5em;
+}
+
 .motto {
     height:200%;
 }
@@ -79,6 +89,8 @@ nav a:hover {
     line-height:1.4em;
     margin-top:2em;
     text-align:Center;
+    text-transform:none;
+    font-weight:regular;
 }
 
 .motto h2 strong {
@@ -87,6 +99,16 @@ nav a:hover {
 
 .motto h2 strong:nth-of-type(3n) {
     color:#7cbc64;
+}
+
+a {
+    color:#7dcaea;
+    font-weight:bold;
+    transition:0.5s all;
+}
+
+a:hover {
+    text-decoration:none;
 }
 
 a.button {
@@ -163,14 +185,27 @@ ul {
 
 /* blog stuff */
 
+a h2, a h3 {
+    color:#333;
+}
+
+.blog {
+    margin-bottom:2em;
+}
+
+.blog h2 {
+    font-size:2.6em;
+}
+
 .blog h2, .blog h3 {
-    text-align:Center;
+    text-align:center;
     font-weight:100;
     text-transform:uppercase;
 }
 
 .blog h3 {
     margin-top:0;
+    font-size:1.5em;
 }
 
 .blog .blogside {
@@ -186,4 +221,45 @@ ul {
 
 .blogside span {
     display:block;
+}
+
+.blogbody ul, .blogbody ol {
+    font-size:1.1em;
+    line-height:1.6em;
+    margin:1em 2em;
+}
+
+.blogbody p {
+    font-size:1.1em;
+    line-height:1.6em;
+}
+
+.blogbody img {
+    display:block;
+    width:auto;
+    max-width:100%;
+    margin:1em auto;
+}
+
+
+footer {
+    border-top:1px solid #eaedef;
+    font-size:1.4em;
+    text-align:center;
+    line-height:2em;
+}
+
+footer ul {
+    list-style-type:None;
+}
+
+footer li {
+    display:inline-block;
+    width:2.1em;
+    height:2.1em;
+    border-radius:2em;
+    background:#eee;
+    color:#999;
+    margin:1em 0.3em;;
+    cursor:pointer;
 }

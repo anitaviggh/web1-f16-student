@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
 
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.fittext.js" type="text/javascript"></script>
+    <script src="js/jquery.matchHeight-min.js" type="text/javascript"></script>
+    
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
@@ -78,9 +83,21 @@
         </div>
         
     </div>
+    
+    <footer>
+        <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+        </ul>
+    </footer>
 </body>
     
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/jquery.fittext.js" type="text/javascript"></script>
+    
+    <script>
+    $(function() {
+    $('.shopitem').matchHeight({byRow:false});
+});
+    </script>
     
 </html>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 * {
     margin:0;
     padding:0;
@@ -55,7 +57,7 @@ body {
 nav {
     background:#fff;
     border-top:1px solid #6fe0b9;
-    border-bottom:1px solid #fed584;
+    border-bottom:1px solid #6fe0b9;
     text-align:center;
     padding:0.5em;
 }
@@ -154,6 +156,50 @@ figcaption h2 {
     margin-bottom:1em;
 }
 
+
+
+/* PROJECT PAGES*/
+
+.projectbody {
+    position:relative;
+}
+
+.projectdesc {
+    padding:1em;
+}
+
+.projectdesc h1 {
+    text-align:center;
+}
+
+.projectdesc p {
+    line-height:1.5em;
+    margin-bottom:1em;
+    font-family:"Open Sans";
+}
+
+.projectbody img {
+    width:100%;
+    margin:0;
+    display:block;
+}
+
+.totop {
+    position:fixed;
+    bottom:1em;
+    right:1em;
+    text-align:center;
+    line-height:3em;
+    width:3em;
+    height:3em;
+    background:#6fe0b9;
+    border-radius:10em;
+    cursor:pointer;
+    display:none;
+    color:#fff;
+}
+
+
 @media screen and (max-width:750px) {
     .header h1 {
         display:None;
@@ -163,9 +209,15 @@ figcaption h2 {
 
 @media screen and (min-width: 33em) { /* large-screen */
     
+    .header {
+        position:fixed;
+        width:100%;
+        z-index:9999999;
+    }
+    
     nav {
         border:none;
-        position:absolute;
+        position:fixed;
         z-index:9999999;
         top:1em;
         right:0;
@@ -174,8 +226,25 @@ figcaption h2 {
     .sideways {
         transform-origin: top right;
         position:absolute;
-        left:-15em;
-        width:15em;
+        left:-18em;
+        width:18em;
         transform:rotate(-90deg);
+    }
+    
+    figure.featured {
+     height:40em;   
+    }
+    
+    .projectdesc {
+        position:absolute;
+        max-width:60%;
+        width:40em;
+        z-index:999;
+        top:18em;
+        padding:1em 2em;
+        background:rgba(255,255,255,0.93);
+        left:50%;
+        transform:translateX(-50%);
+        box-shadow:1px 1px 10px rgba(0,0,0,0.2);
     }
 }

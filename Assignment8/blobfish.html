@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Save the Blobfish! | Annie Viggh Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <h1>Annie Viggh Design</h1>
+    </div>
+    
+    <nav>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="sideways">
+        <h1>PROJECT</h1>
+    </div>
+    
+    <section class="projectbody">
+        <img src="images/endangeredbooklet.jpg">
+        <div class="projectdesc">
+            <h1>Save the Blobfish!</h1>
+            <p>Everyone wants to save the pandas and tigers and rhinos, but what about everything else? When it comes to conservation, charismatic megafauna get the most attention. A charismatic megafauna is an animal that appeals to human aesthetic preferences by being expressive, majestic, fluffy, or otherwise beautiful. But what about the slimy, creepy, ugly, and funny looking members of the animal kingdom? They are just as important when it comes to maintaining biodiversity. If we want to keep our planet healthy, we need to give the ugly ones some love too.</p>
+            <p><em>Save the Blobfish!</em> is an informational booklet all about those weird and wacky endangered animals that need a little more attention.</p>
+        </div>
+        <img src="images/blobfish/endangeredbooklet4.jpg">
+        <img src="images/blobfish/endangeredbooklet5.jpg">
+        <img src="images/blobfish/endangeredbooklet6.jpg">
+        <img src="images/blobfish/endangeredbooklet7.jpg">
+        <img src="images/blobfish/endangeredbooklet8.jpg">
+        
+    </section>
+    
+    <div class="totop"><i class="fa fa-arrow-up"></i></div>
+    
+    
+    <script>
+        $(document).ready(function(){
+	
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.totop').fadeIn();
+                } else {
+                    $('.totop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.totop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+        });
+    </script>
+    
+    <script>
+    jQuery(".projectdesc h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
+    </script>
+</body>
+</html>

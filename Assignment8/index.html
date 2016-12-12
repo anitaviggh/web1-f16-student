@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>The Template Page</title>
+  <title>Annie Viggh Design</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,42 +22,59 @@
     </div>
     
     <nav>
-        <a href="">Work</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
     
     <div class="sideways">
         <h1>WORK</h1>
     </div>
     
-    <a href=""><figure class="featured">
+    <a href="blobfish.html"><figure class="featured">
         <img src="images/endangeredbooklet.jpg">   
         <figcaption>
             <h1>Save the Blobfish!</h1>
         </figcaption>
     </figure></a>
     
-    <a href=""><figure>
-        <img src="images/bdwtexture.jpg">   
+    <a href="names.html"><figure>
+        <img src="images/names/closeup.png">   
         <figcaption>
-            <h1>Boston Design Week</h1>
+            <h1>Baby Names Infographic</h1>
         </figcaption>
     </figure></a>
     
-    <a href=""><figure>
-        <img src="images/housebig.jpg">   
+    <a href="amtrak.html"><figure>
+        <img src="images/amtrak/timetable.jpg">   
         <figcaption>
-            <h1>Sustainable Solar</h1>
+            <h1>Amtrak Redesigns</h1>
         </figcaption>
     </figure></a>
     
-    <a href=""><figure>
-        <img src="images/timetable.jpg">   
-        <figcaption>
-            <h1>Amtrak Timetable</h1>
-        </figcaption>
-    </figure></a>
+    <div class="totop"><i class="fa fa-arrow-up"></i></div>
+    
+    
+    <script>
+        $(document).ready(function(){
+	
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.totop').fadeIn();
+                } else {
+                    $('.totop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.totop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+        });
+    </script>
     
     <script>
     jQuery("figcaption h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });

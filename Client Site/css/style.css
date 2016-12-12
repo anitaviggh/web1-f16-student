@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:"Montserrat",sans-serif
+}
+
+.header {
+    height:4em;
+    background:#fff;
+    position:relative;
+    z-index:1000;
+}
+
+.header h1 {
+    float:left;
+    margin:0;
+    height:100%;
+    padding-left:1.5em;
+    line-height:1.8em;
+}
+
+.logo {
+    background:#6fe0b9;
+    width:5.4em;
+    height:100%;
+    position:relative;
+    padding:0.25em;
+    text-align:center;
+    float:left;
+}
+
+.logo:after {
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4em 2em 0 0;
+    border-color: #6fe0b9 transparent transparent transparent;
+    position:absolute;
+    right:-2em;
+    top:0;
+    
+}
+
+.logo img {
+    height:3.5em;
+}
+
+nav {
+    background:#fff;
+    border-top:1px solid #6fe0b9;
+    border-bottom:1px solid #6fe0b9;
+    text-align:center;
+    padding:0.5em;
+}
+
+nav a {
+    color:#6fe0b9;
+    text-decoration:none;
+    margin:1em;
+    transition:all 0.5s;
+}
+
+nav a:hover {
+    opacity:0.5;
+}
+
+.sideways {
+    background-color:#fff;
+    color:#333;
+    padding:0.2em 2em;
+    position:absolute;
+    z-index:10000;
+}
+
+figure {
+    margin:0;
+    height:15em;
+    width:100%;
+    position:relative;
+}
+
+figure.featured {
+    height:30em;
+}
+
+figure img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+figcaption {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) skewX(-20deg);
+    text-align:center;
+    padding:0 2em;
+    background:rgba(255,255,255,0.9);
+    width:50%;
+    opacity:0;
+    transition:0.5s all;
+}
+
+a:hover figcaption {
+    opacity:1;
+}
+
+/*figcaption:after {
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6em 2em 0 0;
+    border-color: rgba(255,255,255,0.9) transparent transparent transparent;
+    position:absolute;
+    right:-2em;
+    top:0;
+}
+
+figcaption:before {
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 6em 2em;
+    border-color: transparent transparent rgba(255,255,255,0.9) transparent ;
+    position:absolute;
+    left:-2em;
+    top:0;
+}*/
+
+figcaption h1, figcaption h2 {
+    color:#000;
+    text-shadow:1px 1px 3px rgba(255,255,255,0.4);
+    transform:skewX(20deg);
+}
+
+figcaption h1 {
+    margin:0.5em;
+    font-size:2.6em;
+}
+
+figcaption h2 {
+    font-size:1em;
+    margin-top:-1em;
+    margin-bottom:1em;
+}
+
+
+
+/* PROJECT PAGES*/
+
+.projectbody {
+    position:relative;
+}
+
+.projectdesc {
+    padding:1em;
+}
+
+.projectdesc h1 {
+    text-align:center;
+}
+
+.projectdesc p {
+    line-height:1.5em;
+    margin-bottom:1em;
+    font-family:"Open Sans";
+}
+
+.projectbody img {
+    width:100%;
+    margin:0;
+    display:block;
+}
+
+.totop {
+    position:fixed;
+    bottom:1em;
+    right:1em;
+    text-align:center;
+    line-height:3em;
+    width:3em;
+    height:3em;
+    background:#6fe0b9;
+    border-radius:10em;
+    cursor:pointer;
+    display:none;
+    color:#fff;
+}
+
+
+@media screen and (max-width:750px) {
+    .header h1 {
+        display:None;
+    }
+}
+
+
+@media screen and (min-width: 33em) { /* large-screen */
+    
+    .header {
+        position:fixed;
+        width:100%;
+        z-index:9999999;
+    }
+    
+    nav {
+        border:none;
+        position:fixed;
+        z-index:9999999;
+        top:1em;
+        right:0;
+    }
+    
+    .sideways {
+        transform-origin: top right;
+        position:absolute;
+        left:-18em;
+        width:18em;
+        transform:rotate(-90deg);
+    }
+    
+    figure.featured {
+     height:40em;   
+    }
+    
+    .projectdesc {
+        position:absolute;
+        max-width:60%;
+        width:40em;
+        z-index:999;
+        top:18em;
+        padding:1em 2em;
+        background:rgba(255,255,255,0.93);
+        left:50%;
+        transform:translateX(-50%);
+        box-shadow:1px 1px 10px rgba(0,0,0,0.2);
+    }
+}
