@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Baby Names Infographic | Annie Viggh Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <h1>Annie Viggh Design</h1>
+    </div>
+    
+    <nav>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="sideways">
+        <h1>PROJECT</h1>
+    </div>
+    
+    <section class="projectbody">
+        <div class="about">
+            <h1>About Annie</h1>
+            <p>Annie Viggh is a graphic design student currently attending MassArt. Her main interest lie in web and app design, but she also does branding, print design, and illustration. Her programming experience includes HTML, CSS, Javascript, JQuery, and some PHP. She fancies herself a novelist, but not a very good one. Besides creative work, her interests include aliens, waffles, and fixing people's obscure technical photoshop problems.</p>
+        </div>
+        
+    </section>
+    
+    <div class="totop"><i class="fa fa-arrow-up"></i></div>
+    
+    
+    <script>
+        $(document).ready(function(){
+	
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.totop').fadeIn();
+                } else {
+                    $('.totop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.totop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+        });
+    </script>
+    
+    <script>
+    jQuery(".projectdesc h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
+    </script>
+</body>
+</html>

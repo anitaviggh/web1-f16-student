@@ -9,7 +9,8 @@
 }
 
 body {
-    font-family:"Montserrat",sans-serif
+    font-family:"Montserrat",sans-serif;
+    background:#f6f6f6;
 }
 
 .header {
@@ -168,11 +169,16 @@ figcaption h2 {
     padding:1em;
 }
 
+.about, .contact {
+    padding:1em;
+    margin-top:5em;
+}
+
 .projectdesc h1 {
     text-align:center;
 }
 
-.projectdesc p {
+.projectdesc p, .about p, .contact p {
     line-height:1.5em;
     margin-bottom:1em;
     font-family:"Open Sans";
@@ -199,6 +205,33 @@ figcaption h2 {
     color:#fff;
 }
 
+label {
+    display:block;
+    margin-top:1em;
+}
+
+input, textarea {
+    width:100%;
+    border-radius:4px;
+    border:1px solid #eee;
+    padding:0.3em 0.6em;
+    margin:0.5em 0;
+}
+
+button {
+    background:#6fe0b9;
+    padding:0.4em 0.6em;
+    border:none;
+    border-radius:6px;
+    margin:0.5em 0;
+    float:right;
+    transition:opacity 0.5s;
+}
+
+button:hover {
+    opacity:0.6;
+}
+
 
 @media screen and (max-width:750px) {
     .header h1 {
@@ -208,6 +241,11 @@ figcaption h2 {
 
 
 @media screen and (min-width: 33em) { /* large-screen */
+    
+    body {
+        background-color:#f6f6f6;
+    background-image:url('../images/bg.png');
+    }
     
     .header {
         position:fixed;
@@ -235,7 +273,7 @@ figcaption h2 {
      height:40em;   
     }
     
-    .projectdesc {
+    .projectdesc, .about, .contact {
         position:absolute;
         max-width:60%;
         width:40em;
@@ -246,5 +284,10 @@ figcaption h2 {
         left:50%;
         transform:translateX(-50%);
         box-shadow:1px 1px 10px rgba(0,0,0,0.2);
+        margin-bottom:5em;
+    }
+    
+    .about, .contact {
+        top:8em;
     }
 }
